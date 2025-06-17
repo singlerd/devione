@@ -1,0 +1,1 @@
+ddev exec vendor/bin/phpunit tests

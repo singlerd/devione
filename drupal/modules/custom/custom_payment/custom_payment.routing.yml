@@ -1,0 +1,7 @@
+custom_payment.api:
+  path: '/custom-payment/api'
+  defaults:
+    _controller: '\Drupal\custom_payment\Controller\CustomPaymentController::getRate'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'

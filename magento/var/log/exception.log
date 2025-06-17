@@ -1,0 +1,96 @@
+[2025-06-12T07:16:06.610293+00:00] main.CRITICAL: DomainException: The default website isn't defined. Set the website and try again. in /var/www/html/vendor/magento/module-store/Model/WebsiteRepository.php:159
+Stack trace:
+#0 /var/www/html/vendor/magento/module-store/Model/StoreResolver/Website.php(49): Magento\Store\Model\WebsiteRepository->getDefault()
+#1 /var/www/html/vendor/magento/module-store/Model/StoresData.php(67): Magento\Store\Model\StoreResolver\Website->getAllowedStoreIds()
+#2 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(138): Magento\Store\Model\StoresData->getStoresData()
+#3 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(97): Magento\Store\Model\StoreResolver->getStoresData()
+#4 /var/www/html/generated/code/Magento/Store/Model/StoreResolver/Proxy.php(105): Magento\Store\Model\StoreResolver->getCurrentStoreId()
+#5 /var/www/html/vendor/magento/module-store/Model/StoreManager.php(159): Magento\Store\Model\StoreResolver\Proxy->getCurrentStoreId()
+#6 /var/www/html/generated/code/Magento/Store/Model/StoreManagerInterface/Proxy.php(129): Magento\Store\Model\StoreManager->getStore()
+#7 /var/www/html/vendor/magento/module-store/Model/Resolver/Store.php(30): Magento\Store\Model\StoreManagerInterface\Proxy->getStore()
+#8 /var/www/html/vendor/magento/framework/Translate/Inline.php(143): Magento\Store\Model\Resolver\Store->getScope()
+#9 /var/www/html/vendor/magento/framework/Escaper.php(282): Magento\Framework\Translate\Inline->isAllowed()
+#10 /var/www/html/pub/errors/default/page.phtml(13): Magento\Framework\Escaper->escapeHtmlAttr()
+#11 /var/www/html/pub/errors/processor.php(450): require('...')
+#12 /var/www/html/pub/errors/processor.php(244): Magento\Framework\Error\Processor->_renderPage()
+#13 /var/www/html/pub/errors/503.php(11): Magento\Framework\Error\Processor->process503()
+#14 /var/www/html/vendor/magento/framework/App/ExceptionHandler.php(172): require('...')
+#15 /var/www/html/vendor/magento/framework/App/ExceptionHandler.php(71): Magento\Framework\App\ExceptionHandler->handleBootstrapErrors()
+#16 /var/www/html/vendor/magento/framework/App/Http.php(156): Magento\Framework\App\ExceptionHandler->handle()
+#17 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Http->catchException()
+#18 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\Http\Interceptor->___callParent()
+#19 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#20 /var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php(32): Magento\Framework\App\Http\Interceptor->___callPlugins()
+#21 /var/www/html/vendor/magento/framework/App/Bootstrap.php(270): Magento\Framework\App\Http\Interceptor->catchException()
+#22 /var/www/html/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#23 {main} {"exception":"[object] (DomainException(code: 0): The default website isn't defined. Set the website and try again. at /var/www/html/vendor/magento/module-store/Model/WebsiteRepository.php:159)"} []
+[2025-06-12T07:17:59.775463+00:00] main.CRITICAL: DomainException: The default website isn't defined. Set the website and try again. in /var/www/html/vendor/magento/module-store/Model/WebsiteRepository.php:159
+Stack trace:
+#0 /var/www/html/vendor/magento/module-store/Model/StoreResolver/Website.php(49): Magento\Store\Model\WebsiteRepository->getDefault()
+#1 /var/www/html/vendor/magento/module-store/Model/StoresData.php(67): Magento\Store\Model\StoreResolver\Website->getAllowedStoreIds()
+#2 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(138): Magento\Store\Model\StoresData->getStoresData()
+#3 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(97): Magento\Store\Model\StoreResolver->getStoresData()
+#4 /var/www/html/generated/code/Magento/Store/Model/StoreResolver/Proxy.php(105): Magento\Store\Model\StoreResolver->getCurrentStoreId()
+#5 /var/www/html/vendor/magento/module-store/Model/StoreManager.php(159): Magento\Store\Model\StoreResolver\Proxy->getCurrentStoreId()
+#6 /var/www/html/generated/code/Magento/Store/Model/StoreManagerInterface/Proxy.php(129): Magento\Store\Model\StoreManager->getStore()
+#7 /var/www/html/vendor/magento/module-store/Model/Resolver/Store.php(30): Magento\Store\Model\StoreManagerInterface\Proxy->getStore()
+#8 /var/www/html/vendor/magento/framework/Translate/Inline.php(143): Magento\Store\Model\Resolver\Store->getScope()
+#9 /var/www/html/vendor/magento/framework/Escaper.php(282): Magento\Framework\Translate\Inline->isAllowed()
+#10 /var/www/html/pub/errors/default/page.phtml(13): Magento\Framework\Escaper->escapeHtmlAttr()
+#11 /var/www/html/pub/errors/processor.php(450): require('...')
+#12 /var/www/html/pub/errors/processor.php(244): Magento\Framework\Error\Processor->_renderPage()
+#13 /var/www/html/pub/errors/503.php(11): Magento\Framework\Error\Processor->process503()
+#14 /var/www/html/vendor/magento/framework/App/ExceptionHandler.php(172): require('...')
+#15 /var/www/html/vendor/magento/framework/App/ExceptionHandler.php(71): Magento\Framework\App\ExceptionHandler->handleBootstrapErrors()
+#16 /var/www/html/vendor/magento/framework/App/Http.php(156): Magento\Framework\App\ExceptionHandler->handle()
+#17 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Http->catchException()
+#18 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\Http\Interceptor->___callParent()
+#19 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#20 /var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php(32): Magento\Framework\App\Http\Interceptor->___callPlugins()
+#21 /var/www/html/vendor/magento/framework/App/Bootstrap.php(270): Magento\Framework\App\Http\Interceptor->catchException()
+#22 /var/www/html/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#23 {main} {"exception":"[object] (DomainException(code: 0): The default website isn't defined. Set the website and try again. at /var/www/html/vendor/magento/module-store/Model/WebsiteRepository.php:159)"} []
+[2025-06-12T20:50:01.679395+00:00] main.CRITICAL: Magento\Framework\Exception\LocalizedException: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+DS_PaymentProcessor schema: current version - none, required version - 1.0.0
+DS_PaymentProcessor data: current version - none, required version - 1.0.0 in /var/www/html/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:83
+Stack trace:
+#0 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(121): Magento\Framework\Module\Plugin\DbStatusValidator->beforeDispatch()
+#1 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#2 /var/www/html/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#3 /var/www/html/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#4 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Http->launch()
+#5 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\Http\Interceptor->___callParent()
+#6 /var/www/html/vendor/magento/module-application-performance-monitor/Plugin/ApplicationPerformanceMonitor.php(38): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#7 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(135): Magento\ApplicationPerformanceMonitor\Plugin\ApplicationPerformanceMonitor->aroundLaunch()
+#8 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#9 /var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http\Interceptor->___callPlugins()
+#10 /var/www/html/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#11 /var/www/html/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#12 {main} {"report_id":"16d013b8ac61612e4fc6e90569c7adb8efc0c04624b8739d2a182df8c7173b4a","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Please upgrade your database: Run \"bin/magento setup:upgrade\" from the Magento root directory.
+The following modules are outdated:
+DS_PaymentProcessor schema: current version - none, required version - 1.0.0
+DS_PaymentProcessor data: current version - none, required version - 1.0.0 at /var/www/html/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:83)"} []
+[2025-06-12T20:50:04.784793+00:00] main.CRITICAL: Magento\Framework\Exception\LocalizedException: Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory.
+The following modules are outdated:
+DS_PaymentProcessor schema: current version - none, required version - 1.0.0
+DS_PaymentProcessor data: current version - none, required version - 1.0.0 in /var/www/html/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:83
+Stack trace:
+#0 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(121): Magento\Framework\Module\Plugin\DbStatusValidator->beforeDispatch()
+#1 /var/www/html/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(76): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#2 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#3 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#4 /var/www/html/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#5 /var/www/html/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#6 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Http->launch()
+#7 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\Http\Interceptor->___callParent()
+#8 /var/www/html/vendor/magento/module-application-performance-monitor/Plugin/ApplicationPerformanceMonitor.php(38): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#9 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(135): Magento\ApplicationPerformanceMonitor\Plugin\ApplicationPerformanceMonitor->aroundLaunch()
+#10 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\Http\Interceptor->Magento\Framework\Interception\{closure}()
+#11 /var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http\Interceptor->___callPlugins()
+#12 /var/www/html/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#13 /var/www/html/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#14 {main} {"report_id":"840f96364d92eb3783b8af31f9827519dc7586ff120777d3e6bcc6f3c783153f","exception":"[object] (Magento\\Framework\\Exception\\LocalizedException(code: 0): Please upgrade your database: Run \"bin/magento setup:upgrade\" from the Magento root directory.
+The following modules are outdated:
+DS_PaymentProcessor schema: current version - none, required version - 1.0.0
+DS_PaymentProcessor data: current version - none, required version - 1.0.0 at /var/www/html/vendor/magento/framework/Module/Plugin/DbStatusValidator.php:83)"} []

@@ -1,0 +1,1 @@
+{"version":1,"defects":{"PaymentProcessorTest::testCurrencyRuleIsApplied":7,"PaymentProcessorTest::testInvalidApiKeyThrowsException":7},"times":{"PaymentProcessorTest::testUppercaseApiKey":0.001,"PaymentProcessorTest::testLowercaseApiKey":0,"PaymentProcessorTest::testCurrencyRuleIsApplied":0,"PaymentProcessorTest::testInvalidApiKeyThrowsException":0}}

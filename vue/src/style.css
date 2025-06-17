@@ -1,0 +1,135 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	-webkit-text-size-adjust: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: var(--lexend);
+	color: var(--pine-green);
+	text-rendering: optimizeLegibility;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+figure {
+	margin: 0;
+}
+ul {
+	padding: 0;
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.component {
+	display: grid;
+	justify-content: center;
+    font-family: var(--montserrat);
+	font-size: 1.5em;
+	line-height: 1.2em;
+	letter-spacing: -0.05em;
+    background-color: #07151f;
+    color: #eceded;
+    font-weight: 500;
+}
+
+.pt5 {
+	padding-top: 5rem;
+}
+
+.pb5 {
+	padding-bottom: 5rem;
+}
+
+.form-control {
+	margin: 1rem 0;
+}
+
+input[type=number], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	background-image: url("data:image/svg+xml,%3Csvg fill='%23666' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	background-size: 40px;
+	width: 100%;
+}
+
+button {
+	width: 100%;
+	background-color: #e31a44;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.heading-wrapper {
+	height: 10rem;
+}
+
+.result-wrapper {
+
+	input {
+		color: white;
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+.confirmation-wrapper {
+	letter-spacing: 0.04rem;
+	padding: 20px;
+	background-color: #13b987;
+	color: white;
+	margin-bottom: 15px;
+	border-radius: 0.5rem;
+	.bold {
+		font-weight: 800;
+	}
+}

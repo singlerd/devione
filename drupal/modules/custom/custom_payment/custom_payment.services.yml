@@ -1,0 +1,4 @@
+services:
+  custom_payment.api_client:
+    class: Drupal\custom_payment\ApiClient
+    arguments: ['@config.factory']

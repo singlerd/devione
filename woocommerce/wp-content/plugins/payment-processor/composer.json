@@ -1,0 +1,19 @@
+{
+    "name": "daniel-singler/payment-processor-plugin",
+    "description": "Custom payment processor plugin",
+    "type": "wordpress-plugin",
+    "require": {
+        "daniel-singler/payment-processor": "dev-main"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/singlerd/payment-processor"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PaymentProcessorPlugin\\": "src/"
+        }
+    }
+}

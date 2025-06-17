@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/config.xsd">
+    <default>
+        <payment>
+            <simple>
+                <active>1</active>
+                <model>DS\CustomPayment\Model\Payment\Simple</model>
+                <order_status>pending</order_status>
+                <title>Simple</title>
+                <allowspecific>0</allowspecific>
+                <group>Offline</group>
+            </simple>
+        </payment>
+    </default>
+</config>

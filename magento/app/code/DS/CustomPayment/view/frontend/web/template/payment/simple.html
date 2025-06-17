@@ -1,0 +1,21 @@
+<div class="payment-method" data-bind="css: {'_active': isChecked()}">
+    <div class="payment-method-title field choice">
+        <input type="radio" name="payment[method]"
+               data-bind="attr: {id: getCode()}, value: getCode(), checked: isChecked, click: selectPaymentMethod"/>
+        <label data-bind="attr: {for: getCode()}">
+            <span data-bind="text: getTitle()"></span>
+        </label>
+    </div>
+    <div class="payment-method-content">
+        <p><strong>Converted total:</strong>
+            <span data-bind="text: getConvertedAmount() + ' ' + getConvertedCurrency()"></span>
+        </p>
+
+        <div class="actions-toolbar">
+            <button class="action primary checkout" type="submit"
+                    data-bind="click: placeOrder, enable: isPlaceOrderActionAllowed()">
+                <span data-bind="i18n: 'Confirm Payment'"></span>
+            </button>
+        </div>
+    </div>
+</div>

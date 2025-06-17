@@ -1,0 +1,7 @@
+name: 'Custom Payment'
+type: module
+description: 'Custom payment gateway using php-api-client.'
+core_version_requirement: ^11
+package: Commerce
+dependencies:
+  - commerce_payment

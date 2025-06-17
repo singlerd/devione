@@ -1,0 +1,28 @@
+{
+    "name": "utsavrock1811/magento2-checkout-customisation",
+    "description": "Magento 2 Add custom text under the 'ship to' section of order summary page on checkout page",
+    "type": "magento2-module",
+    "version": "1.0.1",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "email": "utsav@rocktechnolabs.com",
+            "name": "Utsav D Darji"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0|7.1.*|7.2.*|7.3.*|7.4.*|8.1.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magexpert\\Checkout\\": ""
+        }
+    }
+}

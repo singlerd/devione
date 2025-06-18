@@ -68,3 +68,5 @@ The recommended approach is to use a local npm installation with SSL support; ho
 npm ci
 npm run dev
 ```
+
+The Vue app is using an API from Drupal, so the Drupal project needs to be running.
